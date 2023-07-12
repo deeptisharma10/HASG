@@ -12,6 +12,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="img/favicon (1).png">
 
   <link rel="stylesheet" href="./css/style.css">
   <title>Hasg</title>
@@ -19,76 +20,82 @@
 
 <body>
   <!-- header starts here -->
+  
   <header>
-    <div class="tophead" >
-      <ul class="sub-top-links list-unstyled d-flex gap-4 me-4 fs-6 mt-2">
-        <li class="d-flex ps-2"><a class=" top-link payonline gap-3"><i class="fa fa-usd rounded-circle" aria-hidden="true"></i></a><a class="list-unstyled  text-decoration-none d-flex gap-3 ms-1 text-dark"> pay online</a></li>
-        <li><a class=" top-link" data-target="#ContactNumber" data-toggle="modal" href="javascript:;"><i class="fa fa-phone"
-              data-original-title="Contact Numbers" data-toggle="tooltip"></i></a></li>
+    <div class="tophead">
+      <ul class="sub-top-links list-unstyled d-flex gap-5 me-4 fs-5 mt-2">
+        <li class="d-flex ps-2"><a class=" social-top-link payonline gap-3"><i class="fa fa-usd rounded-circle"
+              aria-hidden="true"></i></a><a class="list-unstyled  text-decoration-none d-flex gap-3 ms-1 text-dark"> pay
+            online</a></li>
+        <li><a class=" top-link" data-target="#ContactNumber" data-toggle="modal" href="javascript:;"><i
+              class="fa fa-phone" data-original-title="Contact Numbers" data-toggle="tooltip"></i></a></li>
         <li><a class="top-link" data-target="#EmailPopup" data-toggle="modal" href="#"><i class="fa fa-envelope"
-              data-original-title="Email Address" data-toggle="tooltip" ></i></a></li>
+              data-original-title="Email Address" data-toggle="tooltip"></i></a></li>
         <li><a class="top-link" href="https://www.facebook.com/downsyndromeassociationofguam" target="blank"
             data-original-title="Facebook" data-toggle="tooltip"><i class="fa-brands fa-facebook-f"></i></a></li>
         <li class="accesible-pannel">
-          <a class="top-link" accesskey="a" aria-expanded="false" class="accessibility" data-original-title="Accessibility Options"
-            data-toggle="tooltip" href="javascript:;"><i class="fa fa-universal-access" aria-hidden="true"></i>
+          <a class="top-link" accesskey="a" aria-expanded="false" class="accessibility"
+            data-original-title="Accessibility Options" data-toggle="tooltip" href="javascript:;"><i
+              class="fa fa-universal-access" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
     </div>
-    <div class="banner-part">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a href="#" class="navbar-brand">
-          <img src="./img/logo_hsag-white.png" alt="" class="img-fluid">
+          <img src="./img/hsag-dark.png" alt="logo" class="img-fluid dark-logo d-none">
+          <img src="./img/hsag-light.png" alt="logo" class="img-fluid light-logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">          
         </button>
-        
-        <div>
-          <ul class="navbar-nav ms-auto gap-3 mb-2 mb-lg-0">
 
+        <div class="collapse navbar-collapse header-nav-wrapper" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto gap-3 mb-2 mb-lg-0">
+            <li class="nav-item home">
+              <a class="nav-link  text-light" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-house"></i>
+              </a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Services
               </a>
-              <div class=" droptext dropdown-menu service-menu" aria-labelledby="navbarDropdown">
-                    <ul class="ps-0 list-unstyled">
-                        <li><a class="dropdown-item" href="#">Overview of Surgical Care &amp; Services</a></li>
-                        <li><a class="dropdown-item" href="#">Colonoscopy</a></li>  
-                        <li><a class="dropdown-item" href="#">Endoscopy</a></li>  
-                        <li><a class="dropdown-item" href="#">Hemorrhoids</a></li>    
-                        <li><a class="dropdown-item" href="#">Hernia Repair</a></li>  
-                        <li><a class="dropdown-item" href="#"> Knee Pain</a></li>               
-                        <li><a class="dropdown-item" href="#">Lumpectomy</a></li> 
-                        <li><a class="dropdown-item" href="#">Mastectomy</a></li> 
-                        <li><a class="dropdown-item" href="#">Shoulder Pain</a></li> 
-                        <li><a class="dropdown-item" href="#">Sigmoidoscopy</a></li> 
-                        <li><a class="dropdown-item" href="#">Vascular Surgery</a></li> 
-                        <li><a class="dropdown-item" href="#">Vasectomy</a></li> 
-                    </ul>
-            </div>
+              <div class=" dropdown-menu service-menu" aria-labelledby="navbarDropdown">
+                <ul class=" droptext list-unstyled">
+                  <li><a class="dropdown-item" href="#">Overview of Surgical Care &amp; Services</a></li>
+                  <li><a class="dropdown-item" href="#">Colonoscopy</a></li>
+                  <li><a class="dropdown-item" href="#">Endoscopy</a></li>
+                  <li><a class="dropdown-item" href="#">Hemorrhoids</a></li>
+                  <li><a class="dropdown-item" href="#">Hernia Repair</a></li>
+                  <li><a class="dropdown-item" href="#"> Knee Pain</a></li>
+                  <li><a class="dropdown-item" href="#">Lumpectomy</a></li>
+                  <li><a class="dropdown-item" href="#">Mastectomy</a></li>
+                  <li><a class="dropdown-item" href="#">Shoulder Pain</a></li>
+                  <li><a class="dropdown-item" href="#">Sigmoidoscopy</a></li>
+                  <li><a class="dropdown-item" href="#">Vascular Surgery</a></li>
+                  <li><a class="dropdown-item" href="#">Vasectomy</a></li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 About Us
               </a>
               <ul class=" droptext dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Overview About Us</a></li>
-                <li><a class="dropdown-item" href="#">Physicians/ Providers</a></li>  
-                <li><a class="dropdown-item" href="#">Facility</a></li>  
-                <li><a class="dropdown-item" href="#">Why Choose Us</a></li>    
-                <li><a class="dropdown-item" href="#">Contact Information</a></li>        
+                <li><a class="dropdown-item" href="#">Physicians/ Providers</a></li>
+                <li><a class="dropdown-item" href="#">Facility</a></li>
+                <li><a class="dropdown-item" href="#">Why Choose Us</a></li>
+                <li><a class="dropdown-item" href="#">Contact Information</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-               Useful info
+              <a class="nav-link  dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Useful info
               </a>
               <ul class=" droptext dropdown-menu text-blue" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Insurances</a></li>
@@ -97,427 +104,647 @@
                 <li><a class="dropdown-item" href="#">Referrals</a></li>
                 <li><a class="dropdown-item" href="#">Appointments</a></li>
                 <li><a class="dropdown-item" href="#">Outpatient</a></li>
-                <li><a class="dropdown-item" href="#">Consultation</a></li>  
-                <li><a class="dropdown-item" href="#">New Patients</a></li>         
+                <li><a class="dropdown-item" href="#">Consultation</a></li>
+                <li><a class="dropdown-item" href="#">New Patients</a></li>
               </ul>
             </li>
-             <li class="nav-item support-list"><a href="#" class="nav-link btn btn-outline-light text-light support-btn rounded-pill px-4 bg-transparent">Request appointment</a>
+            <li class="nav-item support-list"><a href="#"
+                class="nav-link btn support-btn text-light rounded-pill theme-btn px-4">Request
+                appointment</a>
             </li>
+            <!-- -outline-light text-light support-btn rounded-pill px-4 bg-transparent -->
           </ul>
         </div>
       </div>
     </nav>
-  <div class="herosection">   
-      <div class="row d-flex">
-        <div class="col-md-6">
-          <div class="banner_caption_part p-5 text-light">
-            <h1 class="fw-bold fs-0">Excellent Surgical<br>Care in Guam…</h1>
-            <p class="fw-bold fs-5">
-              <strong>Respect, Honesty, &amp; Compassion is rooted in <br>everything we do. <i class="fa fa-heart"></i>
-              </strong>
-            </p>
-            <div class="bannerbtn rounded-pill">
-              <a href="#">ABOUT OUR SERVICES <i class="fa fa-arrow-right"></i>
-              </a>
+  </header>
+  <div class="banner-part">
+  
+    <div class="herosection">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md-6">
+            <div class="banner_caption_part p-5 text-light">
+              <h1 class="fw-bold fs-0">Excellent Surgical<br>Care in Guam…</h1>
+              <p class="fw-bold fs-5">
+                <strong>Respect, Honesty, &amp; Compassion is rooted in <br>everything we do. <i
+                    class="fa fa-heart"></i>
+                </strong>
+              </p>
+              <div class="bannerbtn rounded-pill">
+                <a href="#" class="mt-2 px-5 py-2 fw-600 fs-6 flex-wrap theme-btn">ABOUT OUR SERVICES <i
+                    class="fa fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 box-slider">
+            <div class="slider-img d-flex" id="sliderImg">
+              <img src="./img/banner_i1.jpg" alt="" class="img-fluid">
+              <img src="./img/banner_i2.jpg" alt="" class="img-fluid">
+              <img src="./img/banner_i3.jpg" alt="" class="img-fluid">
             </div>
           </div>
         </div>
-        <div class="col-md-6 box-slider">
-          <div class="slider-img d-flex" id="sliderImg">
-            <img src="./img/banner_i1.jpg" alt="" class="img-fluid">
-            <img src="./img/banner_i2.jpg" alt="" class="img-fluid">
-            <img src="./img/banner_i3.jpg" alt="" class="img-fluid">
-          </div>
-        </div>
       </div>
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+        </g>
+      </svg>
     </div>
   </div>
-</header>
- <!-- header ends here -->
+  <!-- header ends here -->
 
- <!-- section1 -->
+  <!-- section1 -->
   <div class="about-section">
     <div class="container">
-  <div class="row d-flex">
-    <div class="col-md-7 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
-      <div class="d-flex align-items-center">
+      <div class="row">
+        <div class="col-md-7 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+          <div class="d-flex align-items-center flex-wrap justify-content-center">
             <img src="img/about-img1.jpg" class="left_side_image_video img-fluid">
-            <img src="img/about-img2.jpg" class="image_for_left_right">
-        </div>   
-        </div>
-    
-      <div class="col-md-5 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
-        <div class="about_section_content">
-          <div class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-">
-            <h3 class="elementskit-section-subtitle">HAFA ADAI &amp; WELCOME…</h3>
-            <h2 class="ekit-heading--title elementskit-section-title"> We are <strong>Hafa Adai   <br>Specialist Group</strong> </h2>
-            <div class="ekit_heading_separetor_wraper ekit_heading_elementskit-border-divider elementskit-style-long">
-              <div class="elementskit-border-divider elementskit-style-long"></div>
-            </div>
-            <div class="ekit-heading__description">
-              <p>Hafa Adai Specialist Group (HASG), is a Multi-Specialty Medical facility that consists of physician offices, physician clinic and an outpatient procedure operating room suite (OR). HASG provides multiple surgical care and services.  </p>
-              <p>Trusted throughout Guam, Dr. Kia Rahmani is highly experienced as a colorectal surgeon and in the treatment of hemorrhoids. Along with his colleagues and their specialties, they offer a wide range of treatment options for patients requiring general surgery.</p>
-            </div>
-          </div>
-          <div class="ekit-wid-con">
-            <div class="ekit-btn-wraper">
-              <a href="#" class="ekit_creative_button">
-                <span class="ekit_creative_button_text">MORE ABOUT US</span>
-              </a>
-            </div>
-            </div>
+            <img src="img/about-img2.jpg" class="image_for_left_right img-fluid">
           </div>
         </div>
-      </div>
-    </div> 
-</div>
- <!-- section1 ends here-->
 
- <!-- section2 start from here -->
- <div class="ciniksection">
-  <div class="container">
-  <h2 class="heading text-center text-red mt-5 fw-300">Guam’s Preferred Medical Clinic For Over Two Decades</h2>
-  <p class="subheading text-center m-3 fw-200 fs-5">Years of Experience. World-class Quality. Uncompromised Care.</p>
-</div>
- </div>
- <!-- section2 ends here -->
-
- <!-- most Major Insurances Are Accepted -->
-
- <div class="section_for_right_medication">
-  <div class="container">
-    <div class="row d-flex flex-wrap">
-      <div class="col-md-6 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
-        <div class="for_title_section">
-          <h2>Most Major Insurances Are Accepted</h2>
-          <div class="content_for_right_med">
-            <p><em>Please note, Patients are to obtain a referral from their primary physician for a consultation appointment with any of our specialists.</em></p>
-            <p></p>
-            <div class="content-ul_medi d-flex">
-              <ul class="list-unstyled pe-4">
-                <li>
-                  <a href="#">
-                    <i class="fa fa-check"></i>
-                    <span>Aetna International</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-check"></i>
-                    <span>Blue Cross Blue Shield Federal</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-check"></i>
-                    <span>Medicaid/MIP</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-check"></i>
-                    <span>Medicare Traditional</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-check"></i>
-                    <span>Netcare</span>
-                  </a>
-                </li>
-              </ul>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#">
-                    <i class="fa fa-check"></i>
-                    <span>Select care</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-check"></i>
-                    <span>TakeCare</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-check"></i>
-                    <span>Triwest/VA</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-check"></i>
-                    <span>Workers’ Comp</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-check"></i>
-                    <span>Others <u>(Contact Us)</u></span>
-                  </a>
-                </li>
-              </ul>
+        <div class="col-md-5 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+          <div class="about_section_content">
+            <div
+              class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-">
+              <h3 class="elementskit-section-subtitle">HAFA ADAI &amp; WELCOME…</h3>
+              <h2 class="ekit-heading--title elementskit-section-title"> We are <strong>Hafa Adai Specialist
+                  Group</strong> </h2>
+              <div class="ekit_heading_separetor_wraper ekit_heading_elementskit-border-divider elementskit-style-long">
+                <div class="elementskit-border-divider elementskit-style-long"></div>
+              </div>
+              <div class="ekit-heading__description">
+                <p>Hafa Adai Specialist Group (HASG), is a Multi-Specialty Medical facility that consists of physician
+                  offices, physician clinic and an outpatient procedure operating room suite (OR). HASG provides
+                  multiple surgical care and services. </p>
+                <p>Trusted throughout Guam, Dr. Kia Rahmani is highly experienced as a colorectal surgeon and in the
+                  treatment of hemorrhoids. Along with his colleagues and their specialties, they offer a wide range of
+                  treatment options for patients requiring general surgery.</p>
+              </div>
             </div>
-            <div class="ekit-btn-wraper mt-4">
-              <a href="#" data-text="" class="ekit_creative_button ekit_slide_bg ekit_slide_text_left ekit_slide_icon text-light">
-                <span class="ekit_creative_button_text">Request an Appointment</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
-        <div class="d-flex align-items-center m-2">
-          <div class="right_side_larger">
-            <img src="img/Insurances-img1.jpg" class="img-fluid w-100 pe-4">
-          </div>
-          <div class="right_side_smaller">
-            <div class="img_one_item">
-              <img src="img/Insurances-img2.jpg"class="img-fluid">
-            </div>
-            <div class="img_two_item">
-              <img src="img/Insurances-img3.jpg" class="img-fluid">
+            <div class="ekit-wid-con">
+              <div class="ekit-btn-wraper">
+                <a href="#" class="ekit_creative_button">
+                  <span class="ekit_creative_button_text">MORE ABOUT US</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+  <!-- section1 ends here-->
 
-
-<!-- section3 starts here -->
-
-
-<section>
-  <div class="section-services">
+  <!-- section2 start from here -->
+  <div class="ciniksection">
     <div class="container">
-      <div class="row wow fadeInUp" data-wow-delay=".2s">
-        <h2 class="slider-heading">Our Services</h2>
-        <!-- <div class="ekit_heading_separetor_wraper ekit_heading_elementskit-border-divider elementskit-style-long">
+      <h2 class="heading text-center text-red mt-5 fw-300">Guam’s Preferred Medical Clinic For Over Two Decades</h2>
+      <p class="subheading text-center m-3 fw-200 fs-5">Years of Experience. World-class Quality. Uncompromised Care.
+      </p>
+
+      <div class="row list-unstyled text-light">
+        <div class="col-md-3">
+
+          <div class="box-img">
+            <div class="img-btn">
+              <i class="fa-regular fa-hospital"></i>
+            </div>
+            <a href="#" class="box-text">Medicare-Approved <br>Facility</a>
+            <a href="#" class="more-text">more <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="box-img">
+            <div class="img-btn">
+              <i class="fa-regular fa-address-card"></i>
+            </div>
+            <a href="#" class="box-text">Numerous Insurances Accepted </a>
+            <a href="#" class="more-text">more <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="box-img">
+            <div class="img-btn">
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <a href="#" class="box-text">All-in-One<br>Clinic </a>
+            <a href="#" class="more-text">more <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="box-img">
+            <div class="img-btn">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <a href="#" class="box-text">People First <br>Commitment </a>
+            <a href="#" class="more-text">more <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section2 ends here -->
+
+  <!-- section3  SPECIALISTS start here -->
+  <div class="specialists">
+    <div class="container">
+      <h2>“SPECIALISTS”</h2>
+      <h4>It’s in our name.</h4>
+      <p>Our Surgeons offer a wide range of treatment options for patients requiring general surgery.</p>
+      <p>Your consultation, procedure, and follow-up are all done within our clinic. We offer surgical treatment that
+        will spare</p>
+      <p>you the time and expense of same-day surgery and hospital-based surgery.</p>
+      <button class="about-our-facility rounded-pill py-2 px-5">
+        about our facility
+      </button>
+    </div>
+    <div class="emergincy_number_box wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
+      <div class="container">
+
+      </div>
+
+    </div>
+  </div>
+  <div class="experience-sec position-relative">
+    <a href="#" class="link-items">
+      <div class="box-items d-flex ">
+        <div class="row">
+          <div class="col-md-3 d-flex flex-column px-5">
+            <div class="map-img"> <img src="img/map_icon.png" alt=""></div>
+            <div class="text-center text-dark fw-bold fs-4"> 22 + </div>
+            <div>
+              <h3 class="text-center text-dark fs-6">Years in Guam</h3>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-column px-5">
+            <div class="map-img"> <img src="img/team.png" alt=""></div>
+            <div class="text-center text-dark fw-bold fs-4"> 15 + </div>
+            <div>
+              <h3 class="text-center text-dark fs-6">Surgeons &amp; Staff</h3>
+            </div>
+
+          </div>
+          <div class="col-md-3 d-flex flex-column px-5">
+            <div class="map-img"> <img src="img/medical_spec.png" alt=""></div>
+            <div class="text-center text-dark fw-bold fs-4"> 10 + </div>
+            <div>
+              <h3 class="text-center text-dark fs-6">Medical Specialties</h3>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-column px-5">
+            <div class="map-img"> <img src="img/wirte.png" alt=""></div>
+            <div class="text-center text-dark fw-bold fs-4"> 12 + </div>
+            <div>
+              <h3 class="text-center text-dark fs-6">Insurances Accepted</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <p></p>
+  <p></p>
+  <p></p>
+
+  <!-- most Major Insurances Are Accepted -->
+
+  <div class="section_for_right_medication mt-5 pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+          <div class="for_title_section mt-5">
+            <h2>Most Major Insurances Are Accepted</h2>
+            <div class="content_for_right_med">
+              <p><em>Please note, Patients are to obtain a referral from their primary physician for a consultation
+                  appointment with any of our specialists.</em></p>
+              <p></p>
+              <div class="content-ul_medi d-flex">
+                <ul class="list-unstyled pe-4">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-check"></i>
+                      <span>Aetna International</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-check"></i>
+                      <span>Blue Cross Blue Shield Federal</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-check"></i>
+                      <span>Medicaid/MIP</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-check"></i>
+                      <span>Medicare Traditional</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-check"></i>
+                      <span>Netcare</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-check"></i>
+                      <span>Select care</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-check"></i>
+                      <span>TakeCare</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-check"></i>
+                      <span>Triwest/VA</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-check"></i>
+                      <span>Workers’ Comp</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-check"></i>
+                      <span>Others <u>(Contact Us)</u></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="ekit-btn-wraper mt-4">
+                <a href="#" data-text=""
+                  class="ekit_creative_button ekit_slide_bg ekit_slide_text_left ekit_slide_icon text-light">
+                  <span class="ekit_creative_button_text">Request an Appointment</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-5 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+          <div class="d-flex align-items-center m-2">
+            <div class="right_side_larger">
+              <img src="img/Insurances-img1.jpg" class="img-fluid w-100">
+            </div>
+            <div class="right_side_smaller">
+              <div class="img_one_item">
+                <img src="img/Insurances-img2.jpg" class="img-fluid">
+              </div>
+              <div class="img_two_item">
+                <img src="img/Insurances-img3.jpg" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section3 starts here -->
+  <div class="becouse-we-care">
+    <div class="container">
+      <h1 class="text-center mt-4"> Because We Care </h1>
+      <div class="ekit_heading_separetor_wraper ekit_heading_elementskit-border-divider elementskit-style-long divider">
+        <div class="elementskit-border-divider elementskit-style-long"></div>
+      </div>
+      <p class="text-center">We treat each of our patients like family because we know we are an integral part of Guam’s
+        community. </p>
+    </div>
+  </div>
+    <div class="row gx-0 quote-slider">
+      <div class="col-md-6 testi">
+        <img src="img/testimonial.jpg" alt="" class="w-100">
+      </div>
+      <div class="col-md-6 ">
+        <div class="slick-slider-wrapper">
+          <div class="slick-slider mb-0" id="slickHero">
+            <div class="slick-item">
+              <div class="quote_icon">
+                <i class="fa fa-quote-left"></i>
+              </div>
+              <div class="testimional-text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. </p>
+              </div>
+              <div class="testimional-author">J. Cruz</div>
+
+            </div>
+            <div class="item slick-slide" data-slick-index="1" aria-hidden="true" style="width: 600px;">
+              <div class="quote_icon">
+                <i class="fa fa-quote-left"></i>
+              </div>
+              <div class="testimional-text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. </p>
+              </div>
+              <div class="testimional-author">M. Smith</div>
+
+            </div>
+            <div class="item slick-slide" data-slick-index="2" aria-hidden="true" style="width: 600px;">
+              <div class="quote_icon">
+                <i class="fa fa-quote-left"></i>
+              </div>
+              <div class="testimional-text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. </p>
+              </div>
+              <div class="testimional-author">S. Lee</div>
+              <ul class="slick-dots" style="display: block;">
+                <li class="slick-active" aria-hidden="false"><button type="button" data-role="none" role="button"
+                    tabindex="0">1</button></li>
+                <li aria-hidden="true" class=""><button type="button" data-role="none" role="button"
+                    tabindex="0">2</button></li>
+                <li aria-hidden="true" class=""><button type="button" data-role="none" role="button"
+                    tabindex="0">3</button></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- section3 ends here -->
+
+
+  <!-- section4 starts here -->
+
+
+  <section>
+    <div class="section-services">
+      <div class="container">
+        <div class="row wow fadeInUp" data-wow-delay=".2s">
+          <h2 class="slider-heading">Our Services</h2>
+          <!-- <div class="ekit_heading_separetor_wraper ekit_heading_elementskit-border-divider elementskit-style-long">
           <div class="elementskit-border-divider elementskit-style-long"></div>
         </div> -->
-        <div class="services-slider d-flex" id="servicesSlider">
-          <div class="img-1 slider-item">
-            <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
-              <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
-                Colonoscopy
-              </span>
-            </a>
+          <div class="services-slider d-flex" id="servicesSlider">
+            <div class="img-1 slider-item">
+              <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
+                <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
+                  Colonoscopy
+                </span>
+              </a>
+            </div>
+            <div class="img-2 slider-item">
+              <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
+                <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
+                  Endoscopy
+                </span>
+              </a>
+            </div>
+            <div class="img-3 slider-item">
+              <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
+                <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
+                  Hemorrhoids
+                </span>
+              </a>
+            </div>
+            <div class="img-4 slider-item">
+              <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
+                <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
+                  Hernia Repair
+                </span>
+              </a>
+            </div>
+            <div class="img-5 slider-item">
+              <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
+                <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
+                  Knee Pain
+                </span>
+              </a>
+            </div>
+            <div class="img-6 slider-item">
+              <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
+                <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
+                  Lumpectomy
+                </span>
+              </a>
+            </div>
+            <div class="img-7 slider-item">
+              <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
+                <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
+                  Mastectomy
+                </span>
+              </a>
+            </div>
+            <div class="img-7 slider-item">
+              <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
+                <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
+                  Shoulder Pain
+                </span>
+              </a>
+            </div>
+            <div class="img-7 slider-item">
+              <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
+                <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
+                  Sigmoidoscopy
+                </span>
+              </a>
+            </div>
+            <div class="img-7 slider-item">
+              <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
+                <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
+                  Vascular Surgery
+                </span>
+              </a>
+            </div>
+            <div class="img-7 slider-item">
+              <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
+                <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
+                  Vasectomy
+                </span>
+              </a>
+            </div>
+
           </div>
-          <div class="img-2 slider-item">
-            <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
-              <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
-                Endoscopy
-              </span>
-            </a>
-          </div>
-          <div class="img-3 slider-item">
-            <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
-              <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
-                Hemorrhoids
-              </span>
-            </a>
-          </div>
-          <div class="img-4 slider-item">
-            <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
-              <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
-                Hernia Repair
-              </span>
-            </a>
-          </div>
-          <div class="img-5 slider-item">
-            <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
-              <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
-                Knee Pain
-              </span>
-            </a>
-          </div>
-          <div class="img-6 slider-item">
-            <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
-              <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
-                Lumpectomy
-              </span>
-            </a>
-          </div>
-          <div class="img-7 slider-item">
-            <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
-              <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
-                Mastectomy
-              </span>
-            </a>
-          </div>
-          <div class="img-7 slider-item">
-            <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
-              <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
-                Shoulder Pain
-              </span>
-            </a>
-          </div>
-          <div class="img-7 slider-item">
-            <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
-              <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
-                Sigmoidoscopy
-              </span>
-            </a>
-          </div>
-          <div class="img-7 slider-item">
-            <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
-              <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
-                Vascular Surgery
-              </span>
-            </a>
-          </div>
-          <div class="img-7 slider-item">
-            <a href="#" class="zoom-gallery"><img src="img/bg_img.jpg">
-              <span class="image-popup zoom-icon h3 fs-5 fw-bold text-uppercase">
-                Vasectomy
-              </span>
-            </a>
-          </div>
-          
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
- <div class="emergincy_number_box wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
-  <div class="container">
-   <a href="#" class="link-item">
-    <div class="box_emergincy_number d-flex ">
-   
-      <div class="icon_emer">
-        <i class="fa-regular fa-calendar-days"></i>
-      </div>
-      <div class="box-body">
-        <h3 class="info-box-title"> Get Started</h3>
-        <p>
-          REQUEST AN APPOINTMENT
-        </p>
-      </div>
-     
-    </div>
-     </a>
-  </div>
-</div>
- <footer">
- <div class="footer1">
-  <div class="container">
-    <div class="row d-flex">
-      <div class="col-md-3">
-        <div class="content">
-          <img src="img/logo_hsag-white.png" class="ftimg">
-          <p><br></p>
-          <div class="address_item">
-            
-            <address> <i class="fa fa-map-marker"></i>Address Will Go Here, <br>Tamuning, Guam, Guam <a href="#" class="text-light text-decoration-none" >(MAP)</a>
-            </address>
+  <div class="emergincy_number_box wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
+    <div class="container">
+      <a href="#" class="link-item">
+        <div class="box_emergincy_number d-flex ">
+
+          <div class="icon_emer">
+            <i class="fa-regular fa-calendar-days"></i>
           </div>
-          <div class="address_item">
-            <i class="fa fa-phone"></i>
-            <p style="margin-bottom:10px;">Office Tel: <a href="tel:+6716474542" class="text-light text-decoration-none" >+1 671-647-4542</a>
+          <div class="box-body">
+            <h3 class="info-box-title"> Get Started</h3>
+            <p>
+              REQUEST AN APPOINTMENT
             </p>
           </div>
-          <div class="address_item">
-            <i class="fa fa-envelope"></i>
-            <p style="margin-bottom:10px;">Email: <a class="text-light text-decoration-none" href="mailto:email@gmail.com">email@gmail.com</a>
-            </p>
-          </div>
-          <br>
-          
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="content">
-          <h4>Services </h4>
-          <hr>
-          <ul class="items">
-                  <li><a href="#" class="link">Overview of Surgical Care &amp; Services</a></li>
-                  <li><a href="#" class="link">Colonoscopy</a></li>
-                  <li><a href="#" class="link">Endoscopy</a></li>
-                  <li><a href="#" class="link">Hemorrhoids</a></li>
-                  <li><a href="#" class="link">Hernia Repair</a></li>
-                  <li><a href="#" class="link">Knee Pain</a></li>
-                  <li><a href="#" class="link">Lumpectomy</a></li>
-                  <li><a href="#" class="link">Mastectomy</a></li>
-                  <li><a href="#" class="link">Shoulder Pain</a></li>
-                  <li><a href="#" class="link">Sigmoidoscopy</a></li>
-                  <li><a href="#" class="link">Vascular Surgery</a></li>
-                  <li><a href="#" class="link">Vasectomy</a></li>
 
-                </ul>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="content">
-          <h4>Information </h4>
-          <hr>
-          <ul class="items">
-                  <li><a href="#" class="link">Overview About Us</a></li>
-                  <li><a href="#" class="link">Physicians/ Providers</a></li>
-                  <li><a href="#" class="link">Facility</a></li>
-                  <li><a href="#" class="link">Why Choose Us</a></li>
-                  <li><a href="#" class="link">Contact Information</a></li>
-                       <li><a href="#" class="link">Insurances</a></li>
-                  <li><a href="#" class="link">Payments</a></li>
-                  <li><a href="#" class="link">Medicare-approved</a></li>
-                  <li><a href="#" class="link">Referrals</a></li>
-                  <li><a href="#" class="link">Appointments</a></li>
-                  <li><a href="#" class="link">Outpatient</a></li>
-                   
-                   <li><a href="#" class="link">Consultation</a></li>
-                   <li><a href="#" class="link">New Patients</a></li>
-                </ul>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="content">
-          <h4>Quick Links </h4>
-          <hr>
-          <ul class="items">
-            <li>
-              <a href="#" class="link">Pay Online</a>
-            </li>
-            <li>
-              <a href="#" class="link">REQUEST APPOINTMENT</a>
-            </li>
-           
-          </ul>
-        </div>
-      </div>
+      </a>
     </div>
   </div>
-  <div class="cc-section">
-    <div class="container ">
-      <div class="card-section text-center">
-          <h6 class="text-white text-center mt-5">Most Major Credit Cards and Debit Cards are accepted.  </h6>
-        <img src="img/cc_icons.png" class="text-center w-25">
+  <footer">
+    <div class="footer1">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md-3">
+            <div class="content">
+              <img src="img/logo_hsag-white.png" class="ftimg">
+              <p><br></p>
+              <div class="address_item">
+
+                <address> <i class="fa fa-map-marker"></i>Address Will Go Here, <br>Tamuning, Guam, Guam <a href="#"
+                    class="text-light text-decoration-none">(MAP)</a>
+                </address>
+              </div>
+              <div class="address_item">
+                <i class="fa fa-phone"></i>
+                <p style="margin-bottom:10px;">Office Tel: <a href="tel:+6716474542"
+                    class="text-light text-decoration-none">+1 671-647-4542</a>
+                </p>
+              </div>
+              <div class="address_item">
+                <i class="fa fa-envelope"></i>
+                <p style="margin-bottom:10px;">Email: <a class="text-light text-decoration-none"
+                    href="mailto:email@gmail.com">email@gmail.com</a>
+                </p>
+              </div>
+              <br>
+
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="content">
+              <h4>Services </h4>
+              <hr>
+              <ul class="items">
+                <li><a href="#" class="link">Overview of Surgical Care &amp; Services</a></li>
+                <li><a href="#" class="link">Colonoscopy</a></li>
+                <li><a href="#" class="link">Endoscopy</a></li>
+                <li><a href="#" class="link">Hemorrhoids</a></li>
+                <li><a href="#" class="link">Hernia Repair</a></li>
+                <li><a href="#" class="link">Knee Pain</a></li>
+                <li><a href="#" class="link">Lumpectomy</a></li>
+                <li><a href="#" class="link">Mastectomy</a></li>
+                <li><a href="#" class="link">Shoulder Pain</a></li>
+                <li><a href="#" class="link">Sigmoidoscopy</a></li>
+                <li><a href="#" class="link">Vascular Surgery</a></li>
+                <li><a href="#" class="link">Vasectomy</a></li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="content">
+              <h4>Information </h4>
+              <hr>
+              <ul class="items">
+                <li><a href="#" class="link">Overview About Us</a></li>
+                <li><a href="#" class="link">Physicians/ Providers</a></li>
+                <li><a href="#" class="link">Facility</a></li>
+                <li><a href="#" class="link">Why Choose Us</a></li>
+                <li><a href="#" class="link">Contact Information</a></li>
+                <li><a href="#" class="link">Insurances</a></li>
+                <li><a href="#" class="link">Payments</a></li>
+                <li><a href="#" class="link">Medicare-approved</a></li>
+                <li><a href="#" class="link">Referrals</a></li>
+                <li><a href="#" class="link">Appointments</a></li>
+                <li><a href="#" class="link">Outpatient</a></li>
+
+                <li><a href="#" class="link">Consultation</a></li>
+                <li><a href="#" class="link">New Patients</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="content">
+              <h4>Quick Links </h4>
+              <hr>
+              <ul class="items">
+                <li>
+                  <a href="#" class="link">Pay Online</a>
+                </li>
+                <li>
+                  <a href="#" class="link">REQUEST APPOINTMENT</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cc-section">
+        <div class="container ">
+          <div class="card-section text-center">
+            <h6 class="text-white text-center mt-5">Most Major Credit Cards and Debit Cards are accepted. </h6>
+            <img src="img/cc_icons.png" class="text-center w-25">
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="ftsection">
+      <hr>
+      <ul
+        class="d-flex gap-lg-3 gap-1 flex-lg-row flex-column text-center justify-content-center list-unstyled flex-wrap">
+        <li> <a href="#" class="link-item text-decoration-none text-light"> © Copyright, All Rights Reserved. </a> </li>
+        <li> <a href="#" class="link-item text-decoration-none text-light"> Site Map</a></li>
+        <li> <a href="#" class="link-item text-decoration-none text-light"> Website Terms of Use</a></li>
+        <li> <a href="#" class="link-item text-decoration-none text-light"> Disclaimers </a></li>
+        <li> <a href="#" class="link-item text-decoration-none text-light"> Privacy Policy </a></li>
+        <li> <a href="#" class="link-item text-decoration-none text-light"> Website by GuamWEBZ</a></li>
+      </ul>
     </div>
-</div>
- </div>
- 
-  <div class="ftsection">
-    <hr>
-    <ul class="d-flex gap-lg-3 gap-1 flex-lg-row flex-column text-center justify-content-center list-unstyled flex-wrap">
-      <li> <a href="#" class="link-item text-decoration-none text-light">  © Copyright, All Rights Reserved. </a> </li>
-      <li> <a href="#" class="link-item text-decoration-none text-light">  Site Map</a></li>
-      <li> <a href="#"class="link-item text-decoration-none text-light">  Website Terms of Use</a></li>
-      <li> <a href="#" class="link-item text-decoration-none text-light">  Disclaimers </a></li>
-      <li> <a href="#" class="link-item text-decoration-none text-light">  Privacy Policy  </a></li>
-    <li>  <a href="#" class="link-item text-decoration-none text-light">  Website by GuamWEBZ</a></li>
-    </ul>
-  </div>
- </footer>
- <script src="./js/jquery.min.js"></script>
- <script src="./js/slick.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"></script>
-  <script src="./js/custom.js"></script>
+    </footer>
+    
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="./js/custom.js"></script>
+
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/animate.js"></script>
+
+
+
+
+
+
 </body>
 
 </html>
